@@ -1,0 +1,36 @@
+array (
+  'fields' => 
+  array (
+    'id' => 
+    array (
+      'type' => 'int',
+      'length' => '10',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'username' => 
+    array (
+      'type' => 'varchar',
+      'length' => '20',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+  ),
+  'keys' => 
+  array (
+  ),
+)

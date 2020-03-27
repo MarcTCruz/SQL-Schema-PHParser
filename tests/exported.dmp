@@ -1,0 +1,329 @@
+array (
+  'fields' => 
+  array (
+    'pri' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => true,
+      'zerofill' => true,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => true,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'u' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => true,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'idx' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => '0',
+      'generated' => false,
+      'comment' => false,
+    ),
+    'idx2' => 
+    array (
+      'type' => 'varchar',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => '\\n',
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field' => 
+    array (
+      'type' => 'datetime',
+      'length' => '',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => '0000-00-00 00:00:00',
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field2' => 
+    array (
+      'type' => 'date',
+      'length' => '',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => 'current_timestamp()',
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field3' => 
+    array (
+      'type' => 'datetime',
+      'length' => '',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field4' => 
+    array (
+      'type' => 'char',
+      'length' => '1',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => 'utf8',
+      'collate' => 'utf8_bin',
+      'null' => false,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field5' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => 
+      array (
+        'virtual' => '`u` + 1',
+      ),
+      'comment' => '',
+    ),
+    'field6' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => 
+      array (
+        'stored' => '`idx` + 4',
+      ),
+      'comment' => false,
+    ),
+    'field 7` 5' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field8' => 
+    array (
+      'type' => 'enum',
+      'length' => 
+      array (
+        0 => 'a',
+        1 => 'b',
+        2 => 'c',
+        3 => ')',
+        4 => '\'',
+      ),
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field9' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field10' => 
+    array (
+      'type' => 'geometry',
+      'length' => '',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => NULL,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'field,' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'fieldDec' => 
+    array (
+      'type' => 'decimal',
+      'length' => '10,9',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => false,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => false,
+      'comment' => false,
+    ),
+    'fieldG' => 
+    array (
+      'type' => 'int',
+      'length' => '11',
+      'unsigned' => false,
+      'zerofill' => false,
+      'charset' => false,
+      'collate' => false,
+      'null' => true,
+      'auto_increment' => false,
+      'default' => false,
+      'generated' => 
+      array (
+        'virtual' => 'curdate() + 1',
+      ),
+      'comment' => false,
+    ),
+  ),
+  'keys' => 
+  array (
+    'PRIMARY' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'pri',
+        ),
+      ),
+    ),
+    'u' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'UNIQUE',
+        'keys' => 
+        array (
+          0 => 'u',
+        ),
+      ),
+    ),
+    'field8' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'UNIQUE',
+        'keys' => 
+        array (
+          0 => 'field8',
+          1 => 'field,',
+        ),
+      ),
+    ),
+    'idx' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'KEY',
+        'keys' => 
+        array (
+          0 => 'idx',
+        ),
+      ),
+    ),
+    'idx2' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'KEY',
+        'keys' => 
+        array (
+          0 => 'idx2',
+        ),
+      ),
+    ),
+    'field4' => 
+    array (
+      'type' => 
+      array (
+        'type' => 'FULLTEXT',
+        'keys' => 
+        array (
+          0 => 'field4',
+        ),
+      ),
+    ),
+  ),
+)
