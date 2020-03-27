@@ -36,8 +36,12 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 
     
     $parseds   = mySQL_showCreateParser::parse($schema);
-    
-   **$parsed will have the value:**
+
+   **If it's intended to parse a dump file mySQL_showCreateParser::pre_parse must be use instead of mySQL_showCreateParser::parse**
+   **mySQL_showCreateParser::pre_parse is a generator which returns arrays according to each schema inside the string/file**
+   **Check index.php from tests to see all usages**
+
+   **parsed value(inside $parseds) will be:**
     
     	array (
 	'fields' => 
