@@ -2,7 +2,7 @@
 Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 
 **Benchmark**
-> **<=8 ms** for parsing 114 tables from **tests/glitch_main.sql** on Inspiron I7 7000 10th Gen
+> **<=8 ms** parsing 114 tables from **tests/glitch_main.sql** on Inspiron I7 7000 10th Gen
 
 **Usage**
 
