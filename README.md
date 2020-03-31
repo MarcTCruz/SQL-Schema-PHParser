@@ -6,6 +6,8 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 
 **Usage**
 
+> *Check index.php from tests to see all usages*
+
     $schema =<<<EOD
 	CREATE TABLE `test` (
     `pri` int(11) unsigned zerofill NOT NULL AUTO_INCREMENT,
@@ -37,19 +39,15 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
     
     $parseds   = mySQL_showCreateParser::parse($schema);
 
->    If it's intended to parse a dump file,
-> **mySQL_showCreateParser::pre_parse** must be used instead of **mySQL_showCreateParser::parse**
-> **mySQL_showCreateParser::pre_parse** is a generator which returns on each iteration the same kind as **mySQL_showCreateParser::parse**
-> 
->        Check index.php from tests to see all usages
+>        If it's intended to parse a dump file
+>     **mySQL_showCreateParser::pre_parse** must be used instead of **mySQL_showCreateParser::parse**
+>     **mySQL_showCreateParser::pre_parse** is a generator which returns on each iteration the same kind as **mySQL_showCreateParser::parse**
+>  
+> **parsed value(inside $parseds) is an array containing:**    
+> *check **'fields'** complete value on tests/exported.dmp*
 
-   **parsed value(inside $parseds) is an array containing:**
-
-	'fields' => 
-		array 
-		(
-			'pri' => 
-			array (
+	'fields' => array(
+		'pri' => array(
 			'type' => 'int',
 			'length' => '11',
 			'unsigned' => true,
@@ -61,9 +59,8 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 			'default' => false,
 			'generated' => false,
 			'comment' => false,
-			),
-			'u' => 
-			array (
+		) ,
+		'u' => array(
 			'type' => 'int',
 			'length' => '11',
 			'unsigned' => true,
@@ -75,97 +72,74 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 			'default' => false,
 			'generated' => false,
 			'comment' => false,
-			),
-		),
+		) ,
+	)
 
-> 	check above complete value on tests/exported.dmp 
-> **namedKeys:** indexed by keyname array of index
+> **namedKeys:** array of index indexed by keyname
 
-     'namedKeys' => 
-      array (
-        'PRIMARY' => 
-        array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'pri',
-          ),
-        ),
-        'u' => 
-        array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'u',
-          ),
-        ),
-        'field8' => 
-        array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'field8',
-            1 => 'field,',
-          ),
-        ),
-        'idx' => 
-        array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'idx',
-          ),
-        ),
-        'idx2' => 
-        array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'idx2',
-          ),
-        ),
-        'field4' => 
-        array (
-          'type' => 'FULLTEXT',
-          'keys' => 
-          array (
-            0 => 'field4',
-          ),
-        ),
-      ),
-    
+	'namedKeys' => array(
+		'PRIMARY' => array(
+			'type' => 'PRIMARY',
+			'keys' => array(
+				0 => 'pri',
+			) ,
+		) ,
+		'u' => array(
+			'type' => 'UNIQUE',
+			'keys' => array(
+				0 => 'u',
+			) ,
+		) ,
+		'field8' => array(
+			'type' => 'UNIQUE',
+			'keys' => array(
+				0 => 'field8',
+				1 => 'field,',
+			) ,
+		) ,
+		'idx' => array(
+			'type' => 'KEY',
+			'keys' => array(
+				0 => 'idx',
+			) ,
+		) ,
+		'idx2' => array(
+			'type' => 'KEY',
+			'keys' => array(
+				0 => 'idx2',
+			) ,
+		) ,
+		'field4' => array(
+			'type' => 'FULLTEXT',
+			'keys' => array(
+				0 => 'field4',
+			) ,
+		) ,
+	)
+ > **keys:** array of index indexed by keytype
 
-> **keys:** indexed by key type array of index
+    'keys' => array(
+        'PRIMARY' => array(
+            'PRIMARY' => array(
+                0 => 'pri',
+            ) ,
+        ) ,
+        'UNIQUE' => array(
+            'field8' => array(
+                0 => 'field8',
+                1 => 'field,',
+            ) ,
+        ) ,
+        'KEY' => array(
+            'idx2' => array(
+                0 => 'idx2',
+            ) ,
+        ) ,
+        'FULLTEXT' => array(
+            'field4' => array(
+                0 => 'field4',
+            ) ,
+        ) ,
+    ) 
 
-      'keys' => 
-      array (
-        'PRIMARY' => 
-        array (
-          'PRIMARY' => 
-          array (
-            0 => 'pri',
-          ),
-        ),
-        'UNIQUE' => 
-        array (
-          'field8' => 
-          array (
-            0 => 'field8',
-            1 => 'field,',
-          ),
-        ),
-        'KEY' => 
-        array (
-          'idx2' => 
-          array (
-            0 => 'idx2',
-          ),
-        ),
-        'FULLTEXT' => 
-        array (
-          'field4' => 
-          array (
-            0 => 'field4',
-          ),
-        ),
-      ),
+
