@@ -43,111 +43,129 @@ Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
 > 
 >        Check index.php from tests to see all usages
 
-   **parsed value(inside $parseds) will be:**
-    
-    	array (
+   **parsed value(inside $parseds) is an array containing:**
+
 	'fields' => 
-	array (
-		'pri' => 
-		array (
-		'type' => 'int',
-		'length' => '11',
-		'unsigned' => true,
-		'zerofill' => true,
-		'charset' => false,
-		'collate' => false,
-		'null' => false,
-		'auto_increment' => true,
-		'default' => false,
-		'generated' => false,
-		'comment' => false,
-		),
-		'u' => 
-		array (
-		'type' => 'int',
-		'length' => '11',
-		'unsigned' => true,
-		'zerofill' => false,
-		'charset' => false,
-		'collate' => false,
-		'null' => false,
-		'auto_increment' => false,
-		'default' => false,
-		'generated' => false,
-		'comment' => false,
-		),
-	... check its complete value on tests/exported.dmp
-	... check its complete value on tests/exported.dmp
-	... check its complete value on tests/exported.dmp
-	),
-	'keys' => 
-	array (
-		'PRIMARY' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'PRIMARY',
-			'keys' => 
+		array 
+		(
+			'pri' => 
 			array (
-			0 => 'pri',
+			'type' => 'int',
+			'length' => '11',
+			'unsigned' => true,
+			'zerofill' => true,
+			'charset' => false,
+			'collate' => false,
+			'null' => false,
+			'auto_increment' => true,
+			'default' => false,
+			'generated' => false,
+			'comment' => false,
+			),
+			'u' => 
+			array (
+			'type' => 'int',
+			'length' => '11',
+			'unsigned' => true,
+			'zerofill' => false,
+			'charset' => false,
+			'collate' => false,
+			'null' => false,
+			'auto_increment' => false,
+			'default' => false,
+			'generated' => false,
+			'comment' => false,
 			),
 		),
-		),
-		'u' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'UNIQUE',
-			'keys' => 
-			array (
-			0 => 'u',
-			),
-		),
-		),
-		'field8' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'UNIQUE',
-			'keys' => 
-			array (
-			0 => 'field8',
-			1 => 'field,',
-			),
-		),
-		),
-		'idx' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'KEY',
-			'keys' => 
-			array (
-			0 => 'idx',
-			),
-		),
-		),
-		'idx2' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'KEY',
-			'keys' => 
-			array (
-			0 => 'idx2',
-			),
-		),
-		),
-		'field4' => 
-		array (
-		'type' => 
-		array (
-			'type' => 'FULLTEXT',
-			'keys' => 
-			array (
-			0 => 'field4',
-			),
-		),
-		),
-	),
-	)
+
+> 	check above complete value on tests/exported.dmp 
+> **namedKeys:** indexed by keyname array of index
+
+     'namedKeys' => 
+      array (
+        'PRIMARY' => 
+        array (
+          'type' => 'PRIMARY',
+          'keys' => 
+          array (
+            0 => 'pri',
+          ),
+        ),
+        'u' => 
+        array (
+          'type' => 'UNIQUE',
+          'keys' => 
+          array (
+            0 => 'u',
+          ),
+        ),
+        'field8' => 
+        array (
+          'type' => 'UNIQUE',
+          'keys' => 
+          array (
+            0 => 'field8',
+            1 => 'field,',
+          ),
+        ),
+        'idx' => 
+        array (
+          'type' => 'KEY',
+          'keys' => 
+          array (
+            0 => 'idx',
+          ),
+        ),
+        'idx2' => 
+        array (
+          'type' => 'KEY',
+          'keys' => 
+          array (
+            0 => 'idx2',
+          ),
+        ),
+        'field4' => 
+        array (
+          'type' => 'FULLTEXT',
+          'keys' => 
+          array (
+            0 => 'field4',
+          ),
+        ),
+      ),
+    
+
+> **keys:** indexed by key type array of index
+
+      'keys' => 
+      array (
+        'PRIMARY' => 
+        array (
+          'PRIMARY' => 
+          array (
+            0 => 'pri',
+          ),
+        ),
+        'UNIQUE' => 
+        array (
+          'field8' => 
+          array (
+            0 => 'field8',
+            1 => 'field,',
+          ),
+        ),
+        'KEY' => 
+        array (
+          'idx2' => 
+          array (
+            0 => 'idx2',
+          ),
+        ),
+        'FULLTEXT' => 
+        array (
+          'field4' => 
+          array (
+            0 => 'field4',
+          ),
+        ),
+      ),
