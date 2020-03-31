@@ -30,6 +30,9 @@ array (
       'comment' => false,
     ),
   ),
+  'namedKeys' => 
+  array (
+  ),
   'keys' => 
   array (
   ),

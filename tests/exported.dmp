@@ -256,73 +256,87 @@ array (
       'comment' => false,
     ),
   ),
-  'keys' => 
+  'namedKeys' => 
   array (
     'PRIMARY' => 
     array (
-      'type' => 
+      'type' => 'PRIMARY',
+      'keys' => 
       array (
-        'type' => 'PRIMARY',
-        'keys' => 
-        array (
-          0 => 'pri',
-        ),
+        0 => 'pri',
       ),
     ),
     'u' => 
     array (
-      'type' => 
+      'type' => 'UNIQUE',
+      'keys' => 
       array (
-        'type' => 'UNIQUE',
-        'keys' => 
-        array (
-          0 => 'u',
-        ),
+        0 => 'u',
       ),
     ),
     'field8' => 
     array (
-      'type' => 
+      'type' => 'UNIQUE',
+      'keys' => 
       array (
-        'type' => 'UNIQUE',
-        'keys' => 
-        array (
-          0 => 'field8',
-          1 => 'field,',
-        ),
+        0 => 'field8',
+        1 => 'field,',
       ),
     ),
     'idx' => 
     array (
-      'type' => 
+      'type' => 'KEY',
+      'keys' => 
       array (
-        'type' => 'KEY',
-        'keys' => 
-        array (
-          0 => 'idx',
-        ),
+        0 => 'idx',
       ),
     ),
     'idx2' => 
     array (
-      'type' => 
+      'type' => 'KEY',
+      'keys' => 
       array (
-        'type' => 'KEY',
-        'keys' => 
-        array (
-          0 => 'idx2',
-        ),
+        0 => 'idx2',
       ),
     ),
     'field4' => 
     array (
-      'type' => 
+      'type' => 'FULLTEXT',
+      'keys' => 
       array (
-        'type' => 'FULLTEXT',
-        'keys' => 
-        array (
-          0 => 'field4',
-        ),
+        0 => 'field4',
+      ),
+    ),
+  ),
+  'keys' => 
+  array (
+    'PRIMARY' => 
+    array (
+      'PRIMARY' => 
+      array (
+        0 => 'pri',
+      ),
+    ),
+    'UNIQUE' => 
+    array (
+      'field8' => 
+      array (
+        0 => 'field8',
+        1 => 'field,',
+      ),
+    ),
+    'KEY' => 
+    array (
+      'idx2' => 
+      array (
+        0 => 'idx2',
+      ),
+    ),
+    'FULLTEXT' => 
+    array (
+      'field4' => 
+      array (
+        0 => 'field4',
       ),
     ),
   ),

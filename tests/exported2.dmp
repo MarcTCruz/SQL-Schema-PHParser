@@ -46,17 +46,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'achievement_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'achievement_id',
-          ),
+          0 => 'achievement_id',
         ),
       ),
     ),
@@ -108,17 +115,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'day',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'day',
-          ),
+          0 => 'day',
         ),
       ),
     ),
@@ -226,42 +240,51 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'share_code',
-            1 => 'service',
-          ),
+          0 => 'share_code',
+          1 => 'service',
         ),
       ),
       'share_day' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'clicks',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'clicks',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-          ),
+          0 => 'player_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'share_code',
+          1 => 'service',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_tsid' => 
+        array (
+          0 => 'player_tsid',
         ),
       ),
     ),
@@ -425,65 +448,67 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'is_reviewed' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_reviewed',
-            1 => 'date_rename',
-          ),
+          0 => 'is_reviewed',
+          1 => 'date_rename',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-            1 => 'date_rename',
-          ),
+          0 => 'player_tsid',
+          1 => 'date_rename',
         ),
       ),
       'is_reviewed_3' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_reviewed',
-            1 => 'date_reviewed',
-            2 => 'reviewed_by',
-          ),
+          0 => 'is_reviewed',
+          1 => 'date_reviewed',
+          2 => 'reviewed_by',
         ),
       ),
       'date_rename' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_rename',
-          ),
+          0 => 'date_rename',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_rename' => 
+        array (
+          0 => 'date_rename',
         ),
       ),
     ),
@@ -647,40 +672,49 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'date_authed' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_authed',
-            1 => 'date_create',
-          ),
+          0 => 'date_authed',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_authed' => 
+        array (
+          0 => 'date_authed',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -802,17 +836,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -892,41 +933,50 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'list_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'list_id',
-            1 => 'date_create',
-          ),
+          0 => 'list_id',
+          1 => 'date_create',
         ),
       ),
       'list_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'list_id',
-            1 => 'value',
-          ),
+          0 => 'list_id',
+          1 => 'value',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'list_id_2' => 
+        array (
+          0 => 'list_id',
+          1 => 'value',
         ),
       ),
     ),
@@ -1034,31 +1084,45 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'player_id',
-            2 => 'client_id',
-            3 => 'scope',
-          ),
+          0 => 'user_id',
+          1 => 'player_id',
+          2 => 'client_id',
+          3 => 'scope',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'player_id',
+          2 => 'client_id',
+          3 => 'scope',
         ),
       ),
     ),
@@ -1306,29 +1370,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -1604,116 +1680,115 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-            1 => 'uid',
-          ),
+          0 => 'player_tsid',
+          1 => 'uid',
         ),
       ),
       'date_expires' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_expires',
-          ),
+          0 => 'date_expires',
         ),
       ),
       'player_tsid_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-            1 => 'expired',
-            2 => 'date_create',
-          ),
+          0 => 'player_tsid',
+          1 => 'expired',
+          2 => 'date_create',
         ),
       ),
       'category' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'category',
-            1 => 'expired',
-            2 => 'date_create',
-          ),
+          0 => 'category',
+          1 => 'expired',
+          2 => 'date_create',
         ),
       ),
       'class_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'class_tsid',
-            1 => 'expired',
-            2 => 'date_create',
-          ),
+          0 => 'class_tsid',
+          1 => 'expired',
+          2 => 'date_create',
         ),
       ),
       'class_tsid_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'class_tsid',
-            1 => 'expired',
-            2 => 'cost_per',
-          ),
+          0 => 'class_tsid',
+          1 => 'expired',
+          2 => 'cost_per',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'expired',
-            1 => 'date_create',
-          ),
+          0 => 'expired',
+          1 => 'date_create',
         ),
       ),
       'buyer_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'buyer_tsid',
-            1 => 'date_sold',
-          ),
+          0 => 'buyer_tsid',
+          1 => 'date_sold',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'player_tsid' => 
+        array (
+          0 => 'player_tsid',
+          1 => 'uid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'buyer_tsid' => 
+        array (
+          0 => 'buyer_tsid',
+          1 => 'date_sold',
         ),
       ),
     ),
@@ -1891,40 +1966,49 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-            1 => 'class_tsid',
-          ),
+          0 => 'id',
+          1 => 'class_tsid',
         ),
       ),
       'category' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'category',
-          ),
+          0 => 'category',
         ),
       ),
       'url' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'url',
-          ),
+          0 => 'url',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+          1 => 'class_tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'url' => 
+        array (
+          0 => 'url',
         ),
       ),
     ),
@@ -2004,28 +2088,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'code',
-          ),
+          0 => 'code',
         ),
       ),
       'rendered' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'rendered',
-          ),
+          0 => 'rendered',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'code',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'rendered' => 
+        array (
+          0 => 'rendered',
         ),
       ),
     ),
@@ -2133,28 +2228,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_create' => 
+        array (
+          0 => 'date_create',
         ),
       ),
     ),
@@ -2276,88 +2382,85 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_started' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_started',
-            1 => 'date_create',
-          ),
+          0 => 'date_started',
+          1 => 'date_create',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'special' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'special',
-          ),
+          0 => 'special',
         ),
       ),
       'special_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'special',
-            1 => 'date_started',
-          ),
+          0 => 'special',
+          1 => 'date_started',
         ),
       ),
       'mode' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'mode',
-            1 => 'special',
-            2 => 'date_started',
-          ),
+          0 => 'mode',
+          1 => 'special',
+          2 => 'date_started',
         ),
       ),
       'mode_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'mode',
-            1 => 'date_started',
-          ),
+          0 => 'mode',
+          1 => 'date_started',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'mode_2' => 
+        array (
+          0 => 'mode',
+          1 => 'date_started',
         ),
       ),
     ),
@@ -2465,17 +2568,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'checksum',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'checksum',
-          ),
+          0 => 'checksum',
         ),
       ),
     ),
@@ -2611,40 +2721,56 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'url' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'url',
-          ),
+          0 => 'url',
         ),
       ),
       'active' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'active',
-            1 => 'date_ends',
-          ),
+          0 => 'active',
+          1 => 'date_ends',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'url' => 
+        array (
+          0 => 'url',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'active' => 
+        array (
+          0 => 'active',
+          1 => 'date_ends',
         ),
       ),
     ),
@@ -2752,29 +2878,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'ballot_id',
-          ),
+          0 => 'user_id',
+          1 => 'ballot_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'ballot_id',
         ),
       ),
     ),
@@ -2840,28 +2978,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'referendum_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'ballot_id',
-          ),
+          0 => 'ballot_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'referendum_id' => 
+        array (
+          0 => 'ballot_id',
         ),
       ),
     ),
@@ -2913,17 +3062,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'fb_uid',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'fb_uid',
-          ),
+          0 => 'fb_uid',
         ),
       ),
     ),
@@ -2975,17 +3131,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'bucket',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'bucket',
-          ),
+          0 => 'bucket',
         ),
       ),
     ),
@@ -3135,29 +3298,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'status' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'status',
-            1 => 'type',
-          ),
+          0 => 'status',
+          1 => 'type',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'status' => 
+        array (
+          0 => 'status',
+          1 => 'type',
         ),
       ),
     ),
@@ -3419,72 +3594,78 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'email' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'email',
-          ),
+          0 => 'email',
         ),
       ),
       'account_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'account_id',
-          ),
+          0 => 'account_id',
         ),
       ),
       'code' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'code',
-          ),
+          0 => 'code',
         ),
       ),
       'added_method' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'added_method',
-          ),
+          0 => 'added_method',
         ),
       ),
       'date_signup' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_signup',
-          ),
+          0 => 'date_signup',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'email' => 
+        array (
+          0 => 'email',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_signup' => 
+        array (
+          0 => 'date_signup',
         ),
       ),
     ),
@@ -3830,50 +4011,62 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'email' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'email',
-          ),
+          0 => 'email',
         ),
       ),
       'send_invite' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'send_invite',
-          ),
+          0 => 'send_invite',
         ),
       ),
       'bucket' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'bucket',
-          ),
+          0 => 'bucket',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'email' => 
+        array (
+          0 => 'email',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'bucket' => 
+        array (
+          0 => 'bucket',
         ),
       ),
     ),
@@ -4009,62 +4202,65 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'stub' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'stub',
-          ),
+          0 => 'stub',
         ),
       ),
       'date_created' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_created',
-          ),
+          0 => 'date_created',
         ),
       ),
       'date_published' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_published',
-          ),
+          0 => 'date_published',
         ),
       ),
       'is_published' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_published',
-            1 => 'date_published',
-          ),
+          0 => 'is_published',
+          1 => 'date_published',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_published' => 
+        array (
+          0 => 'is_published',
+          1 => 'date_published',
         ),
       ),
     ),
@@ -4326,17 +4522,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -4500,29 +4703,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-            1 => 'date_create',
-          ),
+          0 => 'player_tsid',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_tsid' => 
+        array (
+          0 => 'player_tsid',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -4658,46 +4873,58 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'b_cookie',
-          ),
+          0 => 'b_cookie',
         ),
       ),
       'hit_signup' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_pre_tracking',
-            1 => 'hit_signup',
-            2 => 'done_signup',
-            3 => 'used_fb',
-          ),
+          0 => 'is_pre_tracking',
+          1 => 'hit_signup',
+          2 => 'done_signup',
+          3 => 'used_fb',
         ),
       ),
       'bucket' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_pre_tracking',
-            1 => 'bucket',
-            2 => 'hit_signup',
-            3 => 'done_signup',
-            4 => 'used_fb',
-          ),
+          0 => 'is_pre_tracking',
+          1 => 'bucket',
+          2 => 'hit_signup',
+          3 => 'done_signup',
+          4 => 'used_fb',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'b_cookie',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'bucket' => 
+        array (
+          0 => 'is_pre_tracking',
+          1 => 'bucket',
+          2 => 'hit_signup',
+          3 => 'done_signup',
+          4 => 'used_fb',
         ),
       ),
     ),
@@ -4805,28 +5032,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'furniture_tsid',
-          ),
+          0 => 'furniture_tsid',
         ),
       ),
       'date_updated' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_updated',
-          ),
+          0 => 'date_updated',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'furniture_tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_updated' => 
+        array (
+          0 => 'date_updated',
         ),
       ),
     ),
@@ -4948,40 +5186,49 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'source' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'source',
-            1 => 'date_create',
-          ),
+          0 => 'source',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'source' => 
+        array (
+          0 => 'source',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -5103,41 +5350,51 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'sdb_tsid',
-          ),
+          0 => 'sdb_tsid',
         ),
       ),
       'date_updated' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_updated',
-          ),
+          0 => 'date_updated',
         ),
       ),
       'location_type' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'location_type',
-            1 => 'item_class_tsid',
-            2 => 'price_per_unit',
-          ),
+          0 => 'location_type',
+          1 => 'item_class_tsid',
+          2 => 'price_per_unit',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'sdb_tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'location_type' => 
+        array (
+          0 => 'location_type',
+          1 => 'item_class_tsid',
+          2 => 'price_per_unit',
         ),
       ),
     ),
@@ -5273,40 +5530,48 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'email' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'email',
-            1 => 'date_logged',
-          ),
+          0 => 'email',
+          1 => 'date_logged',
         ),
       ),
       'is_processed' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_processed',
-          ),
+          0 => 'is_processed',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_processed' => 
+        array (
+          0 => 'is_processed',
         ),
       ),
     ),
@@ -5358,17 +5623,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -5518,39 +5790,54 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'jobflow_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'jobflow_id',
-          ),
+          0 => 'jobflow_id',
         ),
       ),
       'status' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'status',
-          ),
+          0 => 'status',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'jobflow_id' => 
+        array (
+          0 => 'jobflow_id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'status' => 
+        array (
+          0 => 'status',
         ),
       ),
     ),
@@ -5742,29 +6029,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-            1 => 'version',
-          ),
+          0 => 'location_tsid',
+          1 => 'version',
         ),
       ),
       'pc_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'pc_tsid',
-          ),
+          0 => 'pc_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'location_tsid',
+          1 => 'version',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'pc_tsid' => 
+        array (
+          0 => 'pc_tsid',
         ),
       ),
     ),
@@ -5830,17 +6129,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'fb_uid',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'fb_uid',
-          ),
+          0 => 'fb_uid',
         ),
       ),
     ),
@@ -5934,18 +6240,26 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'feat_id',
+          1 => 'batch_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'feat_id',
-            1 => 'batch_id',
-          ),
+          0 => 'feat_id',
+          1 => 'batch_id',
         ),
       ),
     ),
@@ -6011,31 +6325,45 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'feat_id',
-            1 => 'player_id',
-            2 => 'after_completion',
-          ),
+          0 => 'feat_id',
+          1 => 'player_id',
+          2 => 'after_completion',
         ),
       ),
       'feat_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'feat_id',
-            1 => 'amount',
-          ),
+          0 => 'feat_id',
+          1 => 'amount',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'feat_id',
+          1 => 'player_id',
+          2 => 'after_completion',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'feat_id' => 
+        array (
+          0 => 'feat_id',
+          1 => 'amount',
         ),
       ),
     ),
@@ -6101,17 +6429,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'feat_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'feat_id',
-          ),
+          0 => 'feat_id',
         ),
       ),
     ),
@@ -6219,66 +6554,71 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'share_code',
-            1 => 'service',
-          ),
+          0 => 'share_code',
+          1 => 'service',
         ),
       ),
       'share_day' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-          ),
+          0 => 'share_day',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-          ),
+          0 => 'player_tsid',
         ),
       ),
       'share_day_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'clicks',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'clicks',
         ),
       ),
       'share_day_3' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'quickstart',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'share_code',
+          1 => 'service',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'share_day_3' => 
+        array (
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
         ),
       ),
     ),
@@ -6442,40 +6782,48 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'topic_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'topic_id',
-            1 => 'date_create',
-          ),
+          0 => 'topic_id',
+          1 => 'date_create',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_create' => 
+        array (
+          0 => 'date_create',
         ),
       ),
     ),
@@ -6751,42 +7099,52 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'forum_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'forum_id',
-            1 => 'date_update',
-          ),
+          0 => 'forum_id',
+          1 => 'date_update',
         ),
       ),
       'forum_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'forum_id',
-            1 => 'is_sticky',
-            2 => 'date_update',
-          ),
+          0 => 'forum_id',
+          1 => 'is_sticky',
+          2 => 'date_update',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'forum_id_2' => 
+        array (
+          0 => 'forum_id',
+          1 => 'is_sticky',
+          2 => 'date_update',
         ),
       ),
     ),
@@ -6852,39 +7210,54 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'name' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'name',
-          ),
+          0 => 'name',
         ),
       ),
       'points' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'points',
-          ),
+          0 => 'points',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'name' => 
+        array (
+          0 => 'name',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'points' => 
+        array (
+          0 => 'points',
         ),
       ),
     ),
@@ -6950,28 +7323,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
         ),
       ),
     ),
@@ -7135,43 +7519,53 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-            1 => 'is_deleted',
-            2 => 'date_create',
-          ),
+          0 => 'player_id',
+          1 => 'is_deleted',
+          2 => 'date_create',
         ),
       ),
       'token_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'token_id',
-            1 => 'is_deleted',
-            2 => 'date_create',
-          ),
+          0 => 'token_id',
+          1 => 'is_deleted',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'token_id' => 
+        array (
+          0 => 'token_id',
+          1 => 'is_deleted',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -7307,54 +7701,68 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'tsid' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'tsid',
-          ),
+          0 => 'tsid',
         ),
       ),
       'is_deleted' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_deleted',
-            1 => 'is_public',
-            2 => 'member_count',
-          ),
+          0 => 'is_deleted',
+          1 => 'is_public',
+          2 => 'member_count',
         ),
       ),
       'is_deleted_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_deleted',
-            1 => 'is_public',
-            2 => 'date_create',
-          ),
+          0 => 'is_deleted',
+          1 => 'is_public',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'tsid' => 
+        array (
+          0 => 'tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_deleted_2' => 
+        array (
+          0 => 'is_deleted',
+          1 => 'is_public',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -7490,42 +7898,52 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'topic_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'topic_id',
-            1 => 'date_create',
-          ),
+          0 => 'topic_id',
+          1 => 'date_create',
         ),
       ),
       'topic_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'topic_id',
-            1 => 'is_deleted',
-            2 => 'date_create',
-          ),
+          0 => 'topic_id',
+          1 => 'is_deleted',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'topic_id_2' => 
+        array (
+          0 => 'topic_id',
+          1 => 'is_deleted',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -7689,54 +8107,60 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'group_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'group_id',
-            1 => 'is_deleted',
-            2 => 'date_update',
-          ),
+          0 => 'group_id',
+          1 => 'is_deleted',
+          2 => 'date_update',
         ),
       ),
       'group_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'group_id',
-            1 => 'date_create',
-          ),
+          0 => 'group_id',
+          1 => 'date_create',
         ),
       ),
       'is_deleted' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_deleted',
-            1 => 'date_create',
-          ),
+          0 => 'is_deleted',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_deleted' => 
+        array (
+          0 => 'is_deleted',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -7858,17 +8282,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -8144,75 +8575,74 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'assigned' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'assigned',
-            1 => 'status',
-          ),
+          0 => 'assigned',
+          1 => 'status',
         ),
       ),
       'client_error_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'client_error_id',
-          ),
+          0 => 'client_error_id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'status',
-          ),
+          0 => 'user_id',
+          1 => 'status',
         ),
       ),
       'priority' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'priority',
-            1 => 'date_update',
-          ),
+          0 => 'priority',
+          1 => 'date_update',
         ),
       ),
       'abuse_player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'abuse_player_id',
-          ),
+          0 => 'abuse_player_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'abuse_player_id' => 
+        array (
+          0 => 'abuse_player_id',
         ),
       ),
     ),
@@ -8306,28 +8736,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'in_order' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'in_order',
-          ),
+          0 => 'in_order',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'in_order' => 
+        array (
+          0 => 'in_order',
         ),
       ),
     ),
@@ -8435,28 +8876,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'incident_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'incident_id',
-          ),
+          0 => 'incident_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'incident_id' => 
+        array (
+          0 => 'incident_id',
         ),
       ),
     ),
@@ -8634,28 +9086,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
         ),
       ),
     ),
@@ -8777,41 +9240,51 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'day' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'channel',
-            1 => 'day',
-            2 => 'date_create',
-          ),
+          0 => 'channel',
+          1 => 'day',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'day' => 
+        array (
+          0 => 'channel',
+          1 => 'day',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -8933,29 +9406,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'case_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'case_id',
-            1 => 'date_create',
-          ),
+          0 => 'case_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'case_id' => 
+        array (
+          0 => 'case_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -9077,42 +9562,52 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'case_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'case_id',
-            1 => 'date_create',
-          ),
+          0 => 'case_id',
+          1 => 'date_create',
         ),
       ),
       'case_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'case_id',
-            1 => 'is_casenote',
-            2 => 'date_create',
-          ),
+          0 => 'case_id',
+          1 => 'is_casenote',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'case_id_2' => 
+        array (
+          0 => 'case_id',
+          1 => 'is_casenote',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -9192,28 +9687,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'location_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-          ),
+          0 => 'location_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'location_tsid' => 
+        array (
+          0 => 'location_tsid',
         ),
       ),
     ),
@@ -9293,28 +9799,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'url' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'url',
-          ),
+          0 => 'url',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'url' => 
+        array (
+          0 => 'url',
         ),
       ),
     ),
@@ -9394,28 +9911,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'location_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-          ),
+          0 => 'location_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'location_tsid' => 
+        array (
+          0 => 'location_tsid',
         ),
       ),
     ),
@@ -9509,29 +10037,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'location_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-            1 => 'date_create',
-          ),
+          0 => 'location_tsid',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'location_tsid' => 
+        array (
+          0 => 'location_tsid',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -9625,17 +10165,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -9687,17 +10234,24 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'item_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'item_id',
-          ),
+          0 => 'item_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'UNIQUE' => 
+      array (
+        'item_id' => 
+        array (
+          0 => 'item_id',
         ),
       ),
     ),
@@ -9819,18 +10373,26 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'landing_code',
+          1 => 'landing_version',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'landing_code',
-            1 => 'landing_version',
-          ),
+          0 => 'landing_code',
+          1 => 'landing_version',
         ),
       ),
     ),
@@ -9924,17 +10486,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -10000,39 +10569,47 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
         ),
       ),
       'date_updated' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_updated',
-          ),
+          0 => 'date_updated',
         ),
       ),
       'needs_rebuild' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'needs_rebuild',
-          ),
+          0 => 'needs_rebuild',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'player_id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'needs_rebuild' => 
+        array (
+          0 => 'needs_rebuild',
         ),
       ),
     ),
@@ -10084,30 +10661,43 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-            1 => 'leaderboard',
-          ),
+          0 => 'player_id',
+          1 => 'leaderboard',
         ),
       ),
       'leaderboard' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'leaderboard',
-            1 => 'score',
-          ),
+          0 => 'leaderboard',
+          1 => 'score',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'player_id',
+          1 => 'leaderboard',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'leaderboard' => 
+        array (
+          0 => 'leaderboard',
+          1 => 'score',
         ),
       ),
     ),
@@ -10159,17 +10749,24 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'location_tsid' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-          ),
+          0 => 'location_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'UNIQUE' => 
+      array (
+        'location_tsid' => 
+        array (
+          0 => 'location_tsid',
         ),
       ),
     ),
@@ -10249,54 +10846,61 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'b_cookie',
-            2 => 'date_login',
-          ),
+          0 => 'user_id',
+          1 => 'b_cookie',
+          2 => 'date_login',
         ),
       ),
       'b_cookie' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'b_cookie',
-            1 => 'date_login',
-          ),
+          0 => 'b_cookie',
+          1 => 'date_login',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_login',
-          ),
+          0 => 'user_id',
+          1 => 'date_login',
         ),
       ),
       'date_login' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_login',
-          ),
+          0 => 'date_login',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'user_id',
+          1 => 'b_cookie',
+          2 => 'date_login',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_login' => 
+        array (
+          0 => 'date_login',
         ),
       ),
     ),
@@ -10348,39 +10952,47 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'b_cookie',
-          ),
+          0 => 'b_cookie',
         ),
       ),
       'num_u' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'num_u',
-          ),
+          0 => 'num_u',
         ),
       ),
       'num_t' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'num_t',
-          ),
+          0 => 'num_t',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'b_cookie',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'num_t' => 
+        array (
+          0 => 'num_t',
         ),
       ),
     ),
@@ -10432,39 +11044,47 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
       'num_u' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'num_u',
-          ),
+          0 => 'num_u',
         ),
       ),
       'num_t' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'num_t',
-          ),
+          0 => 'num_t',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'user_id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'num_t' => 
+        array (
+          0 => 'num_t',
         ),
       ),
     ),
@@ -10572,52 +11192,65 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'tsid' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'tsid',
-          ),
+          0 => 'tsid',
         ),
       ),
       'is_deleted' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_deleted',
-            1 => 'member_count',
-          ),
+          0 => 'is_deleted',
+          1 => 'member_count',
         ),
       ),
       'is_deleted_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_deleted',
-            1 => 'date_create',
-          ),
+          0 => 'is_deleted',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'tsid' => 
+        array (
+          0 => 'tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_deleted_2' => 
+        array (
+          0 => 'is_deleted',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -10725,17 +11358,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'user_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
     ),
@@ -10857,64 +11497,67 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'txn_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'txn_id',
-            1 => 'date_create',
-          ),
+          0 => 'txn_id',
+          1 => 'date_create',
         ),
       ),
       'is_confirmed' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_confirmed',
-            1 => 'is_processed',
-          ),
+          0 => 'is_confirmed',
+          1 => 'is_processed',
         ),
       ),
       'recurring_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'recurring_id',
-            1 => 'date_create',
-          ),
+          0 => 'recurring_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'recurring_id' => 
+        array (
+          0 => 'recurring_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -10966,28 +11609,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'token',
-          ),
+          0 => 'token',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'token',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_create' => 
+        array (
+          0 => 'date_create',
         ),
       ),
     ),
@@ -11137,40 +11791,49 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'service',
-            1 => 'id',
-          ),
+          0 => 'service',
+          1 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
       'date_cancelled' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_cancelled',
-          ),
+          0 => 'date_cancelled',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'service',
+          1 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_cancelled' => 
+        array (
+          0 => 'date_cancelled',
         ),
       ),
     ),
@@ -11250,40 +11913,49 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -11671,89 +12343,88 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'service',
-            1 => 'id',
-          ),
+          0 => 'service',
+          1 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'day_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'day_create',
-            1 => 'type',
-            2 => 'status',
-            3 => 'basket',
-          ),
+          0 => 'day_create',
+          1 => 'type',
+          2 => 'status',
+          3 => 'basket',
         ),
       ),
       'id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'refund_for' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'refund_for',
-          ),
+          0 => 'refund_for',
         ),
       ),
       'recurring_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'recurring_id',
-          ),
+          0 => 'recurring_id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'display',
-            2 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'display',
+          2 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'service',
+          1 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'display',
+          2 => 'date_create',
         ),
       ),
     ),
@@ -11833,29 +12504,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'transaction_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'transaction_id',
-            1 => 'date_create',
-          ),
+          0 => 'transaction_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'transaction_id' => 
+        array (
+          0 => 'transaction_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -12215,84 +12898,87 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'tsid' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'tsid',
-          ),
+          0 => 'tsid',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
         ),
       ),
       'name' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'name',
-          ),
+          0 => 'name',
         ),
       ),
       'is_dormant' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_dormant',
-            1 => 'date_last_client',
-          ),
+          0 => 'is_dormant',
+          1 => 'date_last_client',
         ),
       ),
       'date_last_active' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_last_active',
-          ),
+          0 => 'date_last_active',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'tsid' => 
+        array (
+          0 => 'tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_last_active' => 
+        array (
+          0 => 'date_last_active',
         ),
       ),
     ),
@@ -12400,42 +13086,60 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'player_id',
-            1 => 'ua',
-            2 => 'fv',
-          ),
+          0 => 'player_id',
+          1 => 'ua',
+          2 => 'fv',
         ),
       ),
       'player_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-            1 => 'date_latest',
-          ),
+          0 => 'player_id',
+          1 => 'date_latest',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
+          1 => 'ua',
+          2 => 'fv',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_id_2' => 
+        array (
+          0 => 'player_id',
+          1 => 'date_latest',
         ),
       ),
     ),
@@ -12487,17 +13191,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'player_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
         ),
       ),
     ),
@@ -12591,29 +13302,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-            1 => 'date_create',
-          ),
+          0 => 'player_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -12679,17 +13402,24 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'KEY' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
         ),
       ),
     ),
@@ -12755,51 +13485,57 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-          ),
+          0 => 'player_tsid',
         ),
       ),
       'recent_visitors' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'recent_visitors',
-          ),
+          0 => 'recent_visitors',
         ),
       ),
       'is_included' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'quartile',
-          ),
+          0 => 'quartile',
         ),
       ),
       'is_active' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_active',
-            1 => 'recent_visitors',
-          ),
+          0 => 'is_active',
+          1 => 'recent_visitors',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'player_tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_active' => 
+        array (
+          0 => 'is_active',
+          1 => 'recent_visitors',
         ),
       ),
     ),
@@ -12851,17 +13587,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'player_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
         ),
       ),
     ),
@@ -12983,28 +13726,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'code' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'code',
-          ),
+          0 => 'code',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'code' => 
+        array (
+          0 => 'code',
         ),
       ),
     ),
@@ -13126,58 +13880,66 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'tsid',
-          ),
+          0 => 'tsid',
         ),
       ),
       'is_hidden' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_hidden',
-            1 => 'has_owner',
-            2 => 'name',
-          ),
+          0 => 'is_hidden',
+          1 => 'has_owner',
+          2 => 'name',
         ),
       ),
       'is_hidden_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_hidden',
-            1 => 'has_owner',
-            2 => 'hub_name',
-            3 => 'name',
-          ),
+          0 => 'is_hidden',
+          1 => 'has_owner',
+          2 => 'hub_name',
+          3 => 'name',
         ),
       ),
       'is_hidden_3' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_hidden',
-            1 => 'has_owner',
-            2 => 'mote_name',
-            3 => 'hub_name',
-          ),
+          0 => 'is_hidden',
+          1 => 'has_owner',
+          2 => 'mote_name',
+          3 => 'hub_name',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'is_hidden_3' => 
+        array (
+          0 => 'is_hidden',
+          1 => 'has_owner',
+          2 => 'mote_name',
+          3 => 'hub_name',
         ),
       ),
     ),
@@ -13285,66 +14047,71 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'share_code',
-            1 => 'service',
-          ),
+          0 => 'share_code',
+          1 => 'service',
         ),
       ),
       'share_day' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-          ),
+          0 => 'share_day',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-          ),
+          0 => 'player_tsid',
         ),
       ),
       'share_day_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'clicks',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'clicks',
         ),
       ),
       'share_day_3' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'quickstart',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'share_code',
+          1 => 'service',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'share_day_3' => 
+        array (
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
         ),
       ),
     ),
@@ -13382,17 +14149,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -13458,29 +14232,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'location_tsid',
-            1 => 'item_class_tsid',
-          ),
+          0 => 'location_tsid',
+          1 => 'item_class_tsid',
         ),
       ),
       'item_class_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'item_class_tsid',
-          ),
+          0 => 'item_class_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'location_tsid',
+          1 => 'item_class_tsid',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'item_class_tsid' => 
+        array (
+          0 => 'item_class_tsid',
         ),
       ),
     ),
@@ -13560,41 +14346,58 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'class' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'class',
-            1 => 'code',
-          ),
+          0 => 'class',
+          1 => 'code',
         ),
       ),
       'class_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'class',
-            1 => 'url',
-          ),
+          0 => 'class',
+          1 => 'url',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'class' => 
+        array (
+          0 => 'class',
+          1 => 'code',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'class_2' => 
+        array (
+          0 => 'class',
+          1 => 'url',
         ),
       ),
     ),
@@ -13940,64 +14743,73 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'email' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'email',
-          ),
+          0 => 'email',
         ),
       ),
       'email_bounced' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'email_bounced',
-            1 => 'dont_remind',
-            2 => 'date_signup',
-          ),
+          0 => 'email_bounced',
+          1 => 'dont_remind',
+          2 => 'date_signup',
         ),
       ),
       'date_sent' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_sent',
-            1 => 'date_create',
-          ),
+          0 => 'date_sent',
+          1 => 'date_create',
         ),
       ),
       'account_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'account_id',
-          ),
+          0 => 'account_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'email' => 
+        array (
+          0 => 'email',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'account_id' => 
+        array (
+          0 => 'account_id',
         ),
       ),
     ),
@@ -14091,40 +14903,56 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'player_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'player_id',
-          ),
+          0 => 'player_id',
         ),
       ),
       'date_started' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_started',
-            1 => 'date_create',
-          ),
+          0 => 'date_started',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'player_id' => 
+        array (
+          0 => 'player_id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_started' => 
+        array (
+          0 => 'date_started',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -14232,55 +15060,63 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'share_code',
-            1 => 'service',
-          ),
+          0 => 'share_code',
+          1 => 'service',
         ),
       ),
       'player_tsid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'player_tsid',
-          ),
+          0 => 'player_tsid',
         ),
       ),
       'share_day' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'clicks',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'clicks',
         ),
       ),
       'share_day_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'share_day',
-            1 => 'service',
-            2 => 'quickstart',
-          ),
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'share_code',
+          1 => 'service',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'share_day_2' => 
+        array (
+          0 => 'share_day',
+          1 => 'service',
+          2 => 'quickstart',
         ),
       ),
     ),
@@ -14374,28 +15210,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'date_create' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'date_create',
-          ),
+          0 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'date_create' => 
+        array (
+          0 => 'date_create',
         ),
       ),
     ),
@@ -14461,17 +15308,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -14551,30 +15405,43 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'question_id',
-            2 => 'date_answered',
-          ),
+          0 => 'user_id',
+          1 => 'question_id',
+          2 => 'date_answered',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'question_id',
+          2 => 'date_answered',
         ),
       ),
     ),
@@ -14696,17 +15563,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -14744,17 +15618,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -14820,29 +15701,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'url',
-          ),
+          0 => 'url',
         ),
       ),
       'account' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'account',
-            1 => 'date_posted',
-          ),
+          0 => 'account',
+          1 => 'date_posted',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'url',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'account' => 
+        array (
+          0 => 'account',
+          1 => 'date_posted',
         ),
       ),
     ),
@@ -15538,87 +16431,85 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'fb_uid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'fb_uid',
-          ),
+          0 => 'fb_uid',
         ),
       ),
       'email' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'email',
-          ),
+          0 => 'email',
         ),
       ),
       'is_subscriber' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'is_subscriber',
-          ),
+          0 => 'is_subscriber',
         ),
       ),
       'twitter_uid' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'twitter_uid',
-          ),
+          0 => 'twitter_uid',
         ),
       ),
       'signup_method' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'signup_method',
-            1 => 'is_stub',
-            2 => 'date_signup',
-          ),
+          0 => 'signup_method',
+          1 => 'is_stub',
+          2 => 'date_signup',
         ),
       ),
       'ref_code' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'ref_code',
-            1 => 'is_stub',
-            2 => 'date_signup',
-          ),
+          0 => 'ref_code',
+          1 => 'is_stub',
+          2 => 'date_signup',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'ref_code' => 
+        array (
+          0 => 'ref_code',
+          1 => 'is_stub',
+          2 => 'date_signup',
         ),
       ),
     ),
@@ -15712,29 +16603,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'player_tsid',
-          ),
+          0 => 'user_id',
+          1 => 'player_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'player_tsid',
         ),
       ),
     ),
@@ -15828,40 +16731,48 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
       'delta' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'delta',
-          ),
+          0 => 'delta',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'delta' => 
+        array (
+          0 => 'delta',
         ),
       ),
     ),
@@ -15983,42 +16894,60 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id_2' => 
       array (
-        'type' => 
+        'type' => 'UNIQUE',
+        'keys' => 
         array (
-          'type' => 'UNIQUE',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'device_type',
-            2 => 'device_id',
-            3 => 'registration_id',
-          ),
+          0 => 'user_id',
+          1 => 'device_type',
+          2 => 'device_id',
+          3 => 'registration_id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'UNIQUE' => 
+      array (
+        'user_id_2' => 
+        array (
+          0 => 'user_id',
+          1 => 'device_type',
+          2 => 'device_id',
+          3 => 'registration_id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
         ),
       ),
     ),
@@ -16126,40 +17055,48 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'email_old' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'email_old',
-            1 => 'email_new',
-          ),
+          0 => 'email_old',
+          1 => 'email_new',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
         ),
       ),
     ),
@@ -16407,67 +17344,69 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_sent',
-          ),
+          0 => 'user_id',
+          1 => 'date_sent',
         ),
       ),
       'user_id_2' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'is_notice',
-            2 => 'is_cleared',
-            3 => 'date_sent',
-          ),
+          0 => 'user_id',
+          1 => 'is_notice',
+          2 => 'is_cleared',
+          3 => 'date_sent',
         ),
       ),
       'msg_type' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'msg_type',
-            1 => 'skipped',
-            2 => 'resub_date',
-          ),
+          0 => 'msg_type',
+          1 => 'skipped',
+          2 => 'resub_date',
         ),
       ),
       'sent_to' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'sent_to',
-          ),
+          0 => 'sent_to',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'sent_to' => 
+        array (
+          0 => 'sent_to',
         ),
       ),
     ),
@@ -16561,39 +17500,47 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
       'email_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'email_id',
-          ),
+          0 => 'email_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'email_id' => 
+        array (
+          0 => 'email_id',
         ),
       ),
     ),
@@ -16659,28 +17606,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
         ),
       ),
     ),
@@ -16830,17 +17788,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'user_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
     ),
@@ -16962,17 +17927,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'user_id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
         ),
       ),
     ),
@@ -17038,29 +18010,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -17168,28 +18152,39 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-          ),
+          0 => 'user_id',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
         ),
       ),
     ),
@@ -17325,51 +18320,57 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'target_user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'target_user_id',
-          ),
+          0 => 'target_user_id',
         ),
       ),
       'target_player_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'target_player_id',
-          ),
+          0 => 'target_player_id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'target_player_tsid',
-          ),
+          0 => 'user_id',
+          1 => 'target_player_tsid',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'target_player_tsid',
         ),
       ),
     ),
@@ -17491,17 +18492,24 @@ array (
         'comment' => false,
       ),
     ),
+    'namedKeys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'type' => 'PRIMARY',
+        'keys' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+    ),
     'keys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'PRIMARY' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
     ),
@@ -17595,29 +18603,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
     ),
@@ -17711,29 +18731,41 @@ array (
         'comment' => false,
       ),
     ),
-    'keys' => 
+    'namedKeys' => 
     array (
       'PRIMARY' => 
       array (
-        'type' => 
+        'type' => 'PRIMARY',
+        'keys' => 
         array (
-          'type' => 'PRIMARY',
-          'keys' => 
-          array (
-            0 => 'id',
-          ),
+          0 => 'id',
         ),
       ),
       'user_id' => 
       array (
-        'type' => 
+        'type' => 'KEY',
+        'keys' => 
         array (
-          'type' => 'KEY',
-          'keys' => 
-          array (
-            0 => 'user_id',
-            1 => 'date_create',
-          ),
+          0 => 'user_id',
+          1 => 'date_create',
+        ),
+      ),
+    ),
+    'keys' => 
+    array (
+      'PRIMARY' => 
+      array (
+        'PRIMARY' => 
+        array (
+          0 => 'id',
+        ),
+      ),
+      'KEY' => 
+      array (
+        'user_id' => 
+        array (
+          0 => 'user_id',
+          1 => 'date_create',
         ),
       ),
     ),

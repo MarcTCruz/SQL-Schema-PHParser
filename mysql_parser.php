@@ -53,6 +53,7 @@ class mySQL_showCreateParser
         * generated directly from SHOW CREATE TABLE command
         */
         $fields     = [];
+        $namedKeys  = [];
         $keys       = [];
         $columns    = [];
         $sqlCreate  = strtr($sqlCreate, "\r", '');
@@ -94,12 +95,17 @@ class mySQL_showCreateParser
                 $column     = self::getWord(['`' => '`'], '`');
                 $columns[]  = $column;
             }while(self::$currentRow[self::$offset] !== ')');//Handles composite keys
-            $keys[$keyname]['type'] = ['type' => $type, 'keys' => $columns];
+            $namedKeys[$keyname] = ['type' => $type, 'keys' => $columns];
+            
+            if(!isset($keys[$type]))
+                $keys[$type]    = [];
+            
+            $keys[$type]    = [$keyname => $columns];
         }
 
         self::$rows        = [];
         self::$currentRow  = '';
-        return ['fields' => $fields, 'keys' =>$keys];
+        return ['fields' => $fields, 'namedKeys' =>$namedKeys, 'keys' => $keys];
     }
     static private function getWord(array $delimiters, $startAfter = null)
     {
