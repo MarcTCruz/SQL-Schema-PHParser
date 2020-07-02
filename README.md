@@ -1,5 +1,5 @@
 # SQL-Schema-PHParser
-Translates proper SQL schemas from SHOW CREATE TABLE or dump to array
+Translates proper SQL schemas from SHOW CREATE TABLE or dumpped sql to PHP array
 
 **Benchmark**
 > **<=8 ms** parsing 114 tables from **tests/glitch_main.sql** on Inspiron I7 7000 10th Gen
